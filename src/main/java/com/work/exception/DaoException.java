@@ -1,4 +1,4 @@
-package ru.javastudy.springMVC.exception;
+package com.work.exception;
 
 import java.io.IOException;
 import java.sql.SQLException;

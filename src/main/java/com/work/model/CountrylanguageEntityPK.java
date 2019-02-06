@@ -1,4 +1,4 @@
-package ru.javastudy.springMVC.model;
+package com.work.model;
 
 import javax.persistence.Column;
 import javax.persistence.Id;

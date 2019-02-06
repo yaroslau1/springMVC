@@ -1,12 +1,12 @@
-package ru.javastudy.springMVC.utils;
+package com.work.utils;
 
+import com.work.exception.DaoException;
+import com.work.model.CityEntity;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
-import ru.javastudy.springMVC.exception.DaoException;
-import ru.javastudy.springMVC.model.CityEntity;
-import ru.javastudy.springMVC.model.CountryEntity;
-import ru.javastudy.springMVC.model.CountrylanguageEntity;
+import com.work.model.CountryEntity;
+import com.work.model.CountrylanguageEntity;
 
 public class HibernateUtil {
     private static SessionFactory sessionFactory;

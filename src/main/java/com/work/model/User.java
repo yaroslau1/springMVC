@@ -1,4 +1,4 @@
-package ru.javastudy.springMVC.model;
+package com.work.model;
 
 import org.springframework.stereotype.Component;
 

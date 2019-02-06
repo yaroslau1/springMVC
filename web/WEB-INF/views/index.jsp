@@ -17,6 +17,24 @@
 
 </spring:form>
 
+<table border="1">
+    <thead>
+    <tr>
+        <th>City Name</th>
+        <th>Population</th>
+        <th>Country Code</th>
+        <th colspan=2>Action</th>
+    </tr>
+    </thead>
+    <c:forEach items="${requestScope.cities}" var="cityName">
+        <tr>
+            <td><c:out value="${cityName.getName()}" /></td>
+            <td><c:out value="${cityName.getPopulation()}" /></td>
+            <td><c:out value="${cityName.getCountryCode()}" /></td>
+        </tr>
+    </c:forEach>
+</table>
+
 </body>
 
 </html>

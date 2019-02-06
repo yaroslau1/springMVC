@@ -1,8 +1,7 @@
-package ru.javastudy.springMVC.listeners;
+package com.work.listeners;
 
-import ru.javastudy.springMVC.dao.CountryDao;
-import ru.javastudy.springMVC.dao.CountryDaoImpl;
-import ru.javastudy.springMVC.exception.DaoException;
+import com.work.exception.DaoException;
+import com.work.dao.CountryDaoImpl;
 
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;

@@ -1,10 +1,11 @@
-package ru.javastudy.springMVC.model;
+package com.work.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "country")
-public class CountryEntity {
+public class CountryEntity implements Serializable {
     private String code;
     private String name;
     private int population;

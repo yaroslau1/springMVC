@@ -4,8 +4,8 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="ru.javastudy.springMVC.model.CountrylanguageEntity" table="countrylanguage" schema="cities">
-        <composite-id mapped="true" class="ru.javastudy.springMVC.model.CountrylanguageEntityPK">
+    <class name="com.work.model.CountrylanguageEntity" table="countrylanguage" schema="cities">
+        <composite-id mapped="true" class="com.work.model.CountrylanguageEntityPK">
             <key-property name="countryCode">
                 <column name="CountryCode" sql-type="char(3)" length="3"/>
             </key-property>

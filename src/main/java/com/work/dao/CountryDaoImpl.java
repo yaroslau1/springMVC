@@ -1,12 +1,12 @@
-package ru.javastudy.springMVC.dao;
+package com.work.dao;
 
 
+import com.work.exception.DaoException;
+import com.work.utils.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.infinispan.persistence.spi.PersistenceException;
-import ru.javastudy.springMVC.exception.DaoException;
-import ru.javastudy.springMVC.model.CountryEntity;
-import ru.javastudy.springMVC.utils.HibernateUtil;
+import com.work.model.CountryEntity;
 
 import java.io.Closeable;
 import java.io.IOException;

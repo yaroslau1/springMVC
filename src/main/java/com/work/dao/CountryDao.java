@@ -1,7 +1,7 @@
-package ru.javastudy.springMVC.dao;
+package com.work.dao;
 
-import ru.javastudy.springMVC.exception.DaoException;
-import ru.javastudy.springMVC.model.CountryEntity;
+import com.work.exception.DaoException;
+import com.work.model.CountryEntity;
 
 import java.util.List;
 

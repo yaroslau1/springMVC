@@ -1,4 +1,4 @@
-package ru.javastudy.springMVC.main;
+package com.work.main;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Metamodel;

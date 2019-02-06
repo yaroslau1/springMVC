@@ -1,11 +1,13 @@
-package ru.javastudy.springMVC.controller;
+package com.work.controller;
 
+import com.work.dao.CountryDaoImpl;
+import com.work.exception.DaoException;
+import com.work.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import ru.javastudy.springMVC.model.User;
 
 
 @Controller
@@ -14,9 +16,10 @@ public class MainController {
     /*First method on start application*/
     /*Попадаем сюда на старте приложения (см. параметры аннтоции и настройки пути после деплоя) */
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView main() {
+    public ModelAndView main() throws DaoException {
+        CountryDaoImpl countryDao = new CountryDaoImpl();
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("userJSP", new User());
+        modelAndView.addObject("userJSP", countryDao.getAll());
         modelAndView.setViewName("index");
         return modelAndView;
     }
